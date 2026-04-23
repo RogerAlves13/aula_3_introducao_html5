@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #erro { color: red; margin-top: 10px; }
+    </style>
+    <script src="validacao.js"></script>
+</head>
+<body>
+
+    <h1>Formulário de cadastro</h1>
+
+    <form id="meuFormulario">
+        <div>   
+            <label for="nome">Nome completo:</label> <br>
+            <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" title="Digite o seu nome e sobrenome, por favor" required>
+        </div>
+        <div>   
+            <label for="email">E-mail Profissional:</label> <br>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+        </div>
+        <div>   
+            <label for="idade">Idade:</label> <br>
+            <input type="number" id="idade" placeholder="Ex: 18" required>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+    <p id="erro"></p>
+
+</body>
+</html>
